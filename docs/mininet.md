@@ -50,7 +50,7 @@ class SimpleNetwork(Topo):
 if __name__=='__main__':
     setLogLevel('info')
     topo = SimpleNetwork()
-    net = Mininet(topo, controller=RemoteController('c0', ip='150.37.222.126'))
+    net = Mininet(topo, controller=RemoteController('c0', ip='127.0.0.1'))
     net.start()
     net.pingAll()
     net.stop()
